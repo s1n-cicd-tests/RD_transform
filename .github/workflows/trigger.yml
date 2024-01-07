@@ -1,0 +1,11 @@
+name: "Self-hosted runner (push-caller)"
+on: 
+  pull_request:
+
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    name: "init"
+    steps:
+    - run: |
+        echo "trigger"

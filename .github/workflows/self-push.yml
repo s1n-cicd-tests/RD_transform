@@ -21,7 +21,7 @@ on:
 jobs:
   setup:
     name: Setup
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     #container:
     #  image: huggingface/transformers-all-latest-gpu-push-ci
     #  options: --gpus 0 --shm-size "16gb" --ipc host -v /mnt/cache/.cache/huggingface:/mnt/cache/

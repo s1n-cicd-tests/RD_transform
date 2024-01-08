@@ -30,7 +30,7 @@ jobs:
       test_map: ${{ steps.set-matrix.outputs.test_map }}
     steps:
       - name: debug
-        run: sudo mkdir /transformers ; sudo chmod +rwx /transformers
+        run: sudo mkdir /transformers ; sudo chmod +rwx /transformers ; cd /transformers ; git clone https://github.com/huggingface/transformers
       # Necessary to get the correct branch name and commit SHA for `workflow_run` event
       # We also take into account the `push` event (we might want to test some changes in a branch)
       - name: Prepare custom environment variables
